@@ -1,0 +1,84 @@
+html {
+  width: 100%;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+header img {
+  width: 100px;
+}
+
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  padding: 5px;
+  color: rgb(105, 104, 104);
+}
+
+/* header */
+
+/* main */
+
+button {
+  background-color: white;
+  width: 100px;
+  padding: 10px;
+  border-radius: 40px;
+  border: 2px solid orange;
+}
+
+h5 {
+  color: rgb(243, 64, 64);
+}
+
+.pirma {
+  display: flex;
+}
+
+.antra {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(assets/background.svg);
+  background-size: cover;
+  height: 240px;
+}
+
+section {
+  padding: 30px;
+}
+
+.pirma img {
+  width: 200px;
+  /* float: left; */
+}
+
+/* .spalvotas {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 15px;
+  background-image: url(assets/background.svg);
+  background-size: cover;
+  height: 240px;
+} */
+
+.trecia img {
+  width: 125px;
+  padding: 10px 0;
+}
+
+.trecia div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
