@@ -43,6 +43,7 @@ h5 {
 .pirma {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .antra {
@@ -59,8 +60,9 @@ section {
 }
 
 .pirma img {
-  width: 300px;
   float: right;
+  max-width: 75%;
+  object-fit: scale-down;
 }
 
 .trecia img {
@@ -88,11 +90,22 @@ section {
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(223, 223, 223);
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .card-info {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+}
+
+.sesta img {
+  width: 120px;
+}
+
+.sesta {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
 }
