@@ -1,5 +1,7 @@
-html {
+html,
+body {
   width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header */
@@ -10,7 +12,7 @@ header {
 }
 
 header img {
-  width: 100px;
+  width: 130px;
 }
 
 #top {
@@ -22,28 +24,51 @@ header img {
 a {
   padding: 5px;
   color: rgb(105, 104, 104);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+a:last-child {
+  color: rgb(243, 64, 64);
 }
 
 /* header */
 
 /* main */
 
-button {
-  background-color: white;
-  width: 100px;
-  padding: 10px;
-  border-radius: 40px;
-  border: 2px solid orange;
+section {
+  padding: 30px;
 }
 
 h5 {
+  text-transform: uppercase;
   color: rgb(243, 64, 64);
+  font-size: 11px;
+}
+
+p {
+  color: rgb(110, 110, 110);
+}
+
+button {
+  width: 100px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, slateblue, coral) border-box;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  font-size: 12px;
+  padding: 10px 0;
+  font-weight: bold;
 }
 
 .pirma {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.pirma img {
+  max-width: 75%;
+  object-fit: scale-down;
 }
 
 .antra {
@@ -55,14 +80,8 @@ h5 {
   height: 250px;
 }
 
-section {
-  padding: 30px;
-}
-
-.pirma img {
-  float: right;
-  max-width: 75%;
-  object-fit: scale-down;
+.antra p {
+  color: black;
 }
 
 .trecia img {
@@ -76,9 +95,45 @@ section {
   justify-content: space-between;
 }
 
+.ketvirta a {
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .penkta {
   display: flex;
   flex-direction: column;
+}
+
+.sesta {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.sesta div,
+#doll {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+
+.sesta img {
+  width: 120px;
+}
+
+.sesta h2 {
+  font-size: 36px;
+}
+
+.septinta h5 {
+  color: rgb(110, 110, 110);
+}
+
+.septinta img {
+  width: 130px;
 }
 
 .card {
@@ -99,13 +154,90 @@ section {
   padding: 15px;
 }
 
-.sesta img {
-  width: 120px;
+.lists {
+  display: flex;
 }
 
-.sesta {
-  height: 400px;
+li {
+  list-style-type: none;
+  padding: 0 10px 10px 0;
+  color: rgb(110, 110, 110);
+  font-size: 14px;
+}
+
+ul {
+  padding: 0;
+}
+
+#nft,
+#social {
+  padding-left: 50px;
+}
+
+footer {
+  padding: 30px;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
+  color: rgb(110, 110, 110);
+  font-size: 14px;
+}
+
+i {
+  color: rgb(139, 139, 139);
+  padding-right: 10px;
+}
+
+#info-top {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+span {
+  color: orange;
+}
+
+@media (max-width: 700px) {
+  a {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  header p {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #last {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .penkta {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 700px) {
+  .septinta {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #ls-first,
+  #ls-second {
+    display: flex;
+  }
+
+  #about,
+  #contact {
+    padding-left: 50px;
+  }
+
+  .pirma h1 {
+    font-size: 70px;
+  }
 }
